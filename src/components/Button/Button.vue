@@ -1,5 +1,6 @@
 <template>
   <button
+    ref="_ref"
     :class="{
       [`xx-button--${type}`]: type,
       [`xx-button--${size}`]: size,
@@ -8,6 +9,8 @@
       'is-circle': circle,
       'is-disabled': disabled
     }"
+    :disabled="disabled"
+    :type="nativeType"
   >
     <span>
       <slot />
@@ -15,9 +18,16 @@
   </button>
 </template>
 <script setup lang="ts">
+import { ref } from 'vue'
 import type { ButtonProps } from './types'
-defineProps<ButtonProps>()
+withDefaults(defineProps<ButtonProps>(), {
+  nativeType: 'button'
+})
 defineOptions({
   name: 'XxButton'
+})
+const _ref = ref<HTMLElement>()
+defineExpose({
+  ref: _ref
 })
 </script>
