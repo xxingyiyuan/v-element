@@ -2,7 +2,6 @@
   "name": "v-element",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -27,6 +26,8 @@
     "eslint": "^8.49.0",
     "eslint-plugin-vue": "^9.17.0",
     "npm-run-all2": "^6.1.2",
+    "postcss": "^8.4.35",
+    "postcss-nested": "^6.0.1",
     "prettier": "^3.0.3",
     "typescript": "~5.4.0",
     "vite": "^5.1.5",
