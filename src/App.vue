@@ -1,20 +1,25 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
 import XxButton from './components/Button/Button.vue'
-import type { ButtonInstance } from './components/Button/types'
-const buttonRef = ref<ButtonInstance | null>(null)
-onMounted(() => {
-  if (buttonRef.value) {
-    console.log(buttonRef.value.ref)
-  }
-})
 </script>
 
 <template>
-  <XxButton ref="buttonRef" type="primary" round size="large" disabled>button</XxButton>
-  <h1>hello world</h1>
-  <h2>hello world</h2>
-  <h3>hello world</h3>
-  <hr />
-  <a>balabala</a>
+  <xx-button plain>Plain Button</xx-button>
+  <xx-button round>Round Button</xx-button>
+  <xx-button circle>XX</xx-button>
+  <xx-button disabled>Disabled Button</xx-button>
+  <br /><br />
+  <xx-button type="primary">Primary</xx-button>
+  <xx-button type="success">Success</xx-button>
+  <xx-button type="info">Info</xx-button>
+  <xx-button type="warning">Warning</xx-button>
+  <xx-button type="danger">Danger</xx-button>
+  <br /><br />
+  <xx-button type="primary" plain>Primary</xx-button>
+  <xx-button type="success" plain>Success</xx-button>
+  <xx-button type="info" plain>Info</xx-button>
+  <xx-button type="warning" plain>Warning</xx-button>
+  <xx-button type="danger" plain>Danger</xx-button>
+  <br /><br />
+  <xx-button size="large">Large</xx-button>
+  <xx-button size="small">Small</xx-button>
 </template>

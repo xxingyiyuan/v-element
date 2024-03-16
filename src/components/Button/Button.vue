@@ -30,9 +30,3 @@ defineExpose({
     <slot />
   </button>
 </template>
-
-<style>
-.xx-button {
-  background-color: var(--xx-color-primary);
-}
-</style>
