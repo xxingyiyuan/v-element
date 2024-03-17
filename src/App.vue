@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import XxButton from './components/Button/Button.vue'
 import XxCollapse from './components/Collapse/Collapse.vue'
 import XxCollapseItem from './components/Collapse/CollapseItem.vue'
+const activeNames = ref(['a'])
 </script>
 
 <template>
@@ -25,7 +27,7 @@ import XxCollapseItem from './components/Collapse/CollapseItem.vue'
   <xx-button size="large">Large</xx-button>
   <xx-button size="small">Small</xx-button>
 
-  <xx-collapse>
+  <xx-collapse v-model="activeNames" accordion>
     <xx-collapse-item name="a">
       <template #title>
         <h1>this is aaa title</h1>
@@ -37,4 +39,5 @@ import XxCollapseItem from './components/Collapse/CollapseItem.vue'
       this is ccc content
     </xx-collapse-item>
   </xx-collapse>
+  {{ activeNames }}
 </template>
