@@ -28,16 +28,15 @@ const activeNames = ref(['a'])
   <xx-button size="small">Small</xx-button>
 
   <xx-collapse v-model="activeNames" accordion>
-    <xx-collapse-item name="a">
+    <xx-collapse-item name="a" title="Title A">
       <template #title>
         <h1>this is aaa title</h1>
       </template>
       this is aaa content
     </xx-collapse-item>
     <xx-collapse-item name="b" title="this is bbb title"> this is bbb content </xx-collapse-item>
-    <xx-collapse-item name="c" title="this is ccc title" disabled>
+    <xx-collapse-item name="c" title="this is ccc title -- disabled" disabled>
       this is ccc content
     </xx-collapse-item>
   </xx-collapse>
-  {{ activeNames }}
 </template>
