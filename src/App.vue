@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import XxButton from './components/Button/Button.vue'
+import XxCollapse from './components/Collapse/Collapse.vue'
+import XxCollapseItem from './components/Collapse/CollapseItem.vue'
 </script>
 
 <template>
@@ -22,4 +24,17 @@ import XxButton from './components/Button/Button.vue'
   <br /><br />
   <xx-button size="large">Large</xx-button>
   <xx-button size="small">Small</xx-button>
+
+  <xx-collapse>
+    <xx-collapse-item name="a">
+      <template #title>
+        <h1>this is aaa title</h1>
+      </template>
+      this is aaa content
+    </xx-collapse-item>
+    <xx-collapse-item name="b" title="this is bbb title"> this is bbb content </xx-collapse-item>
+    <xx-collapse-item name="c" title="this is ccc title" disabled>
+      this is ccc content
+    </xx-collapse-item>
+  </xx-collapse>
 </template>
