@@ -60,4 +60,8 @@
   --xx-disabled-bg-color: var(--xx-fill-color-light);
   --xx-disabled-text-color: var(--xx-text-color-placeholder);
   --xx-disabled-border-color: var(--xx-border-color-light);
+
+  /*animation*/
+  --xx-transition-duration: 1s;
+  --xx-transition-duration-fast: 0.5s;
 }
