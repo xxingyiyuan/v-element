@@ -3,7 +3,8 @@ import { ref } from 'vue'
 import XxButton from './components/Button/Button.vue'
 import XxCollapse from './components/Collapse/Collapse.vue'
 import XxCollapseItem from './components/Collapse/CollapseItem.vue'
-const activeNames = ref(['a'])
+
+const activeNames = ref<Array<string | number>>(['a'])
 </script>
 
 <template>

@@ -18,7 +18,6 @@ const activeNames = computed({
   },
   set(newValue) {
     emits('update:modelValue', newValue)
-    emits('change', newValue)
   }
 })
 

@@ -11,7 +11,6 @@ export interface CollapseItemProps {
 }
 export interface CollapseEmits {
   (e: 'update:modelValue', values: NameType[]): void
-  (e: 'change', values: NameType[]): void
 }
 export interface CollapseContext {
   activeNames: Ref<NameType[]>,
