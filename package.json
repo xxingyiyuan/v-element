@@ -10,7 +10,7 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006 -c storybook",
     "build-storybook": "storybook build"
   },
   "dependencies": {
