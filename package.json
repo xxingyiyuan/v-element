@@ -11,7 +11,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "storybook": "storybook dev -p 6006 -c storybook",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -c storybook"
   },
   "dependencies": {
     "postcss-color-mix": "^1.1.0",
