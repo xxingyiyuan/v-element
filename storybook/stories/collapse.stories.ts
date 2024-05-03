@@ -13,7 +13,7 @@ export default {
     setup() {
       return { args }
     },
-    template: `<PureCollapse v-bind="args" v-model="args.activeNames"></PureCollapse>`,
+    template: `<PureCollapse v-bind="args"></PureCollapse>`,
   }),
 };
 
@@ -37,7 +37,6 @@ export const PureCollapseDemo = {
       content: 'content C',
       name: 'C',
       disabled: true
-    }],
-    activeNames: ['A']
+    }]
   }
 };
